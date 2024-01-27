@@ -6,6 +6,7 @@ class Lol_champions
     @region = region
   end
 
+  #Getter methods
   def name
     @name
   end
@@ -22,7 +23,7 @@ class Lol_champions
     @region
   end
 
-  # Setter methods
+  #Setter methods
   def name=(new_name)
     @name = new_name
   end
@@ -40,7 +41,19 @@ class Lol_champions
   end
 end
 
-champion = Lol_champions.new("Caitlyn", "marksman", "Bottom", "Piltover")
+#shorter code
+# class Lol_champions
+#   attr_accessor :name, :role, :lane, :region
+#   def initialize(name, role, lane, region)
+#     @name = name
+#     @role = role
+#     @lane = lane
+#     @region = region
+#   end
+# end
+
+
+champion = Lol_champions.new("Caitlyn", "Marksman", "Bottom", "Piltover")
 
 puts champion.name
 puts champion.role

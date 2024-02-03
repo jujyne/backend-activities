@@ -1,12 +1,10 @@
 def disemvowel_trolls(string)
-  new_array = []
-  vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
-
+  new_string = ''
   string.each_char do |char|
-    new_array << char unless vowels.include?(char)
+    new_string << char unless 'aeiouAEIOU'.include?(char)
   end
 
-  puts new_array.join
+  puts new_string
 end
 
 disemvowel_trolls("This website is for losers LOL!")
